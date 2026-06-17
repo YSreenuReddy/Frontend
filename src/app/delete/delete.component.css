@@ -1,0 +1,89 @@
+.container{
+    width:700px;
+    margin:40px auto;
+}
+
+h2{
+    text-align:center;
+    color:#333;
+    margin-bottom:20px;
+}
+
+.student-card{
+    border:1px solid #ddd;
+    padding:20px;
+    margin-bottom:15px;
+    border-radius:10px;
+
+    box-shadow:
+    0 2px 8px rgba(0,0,0,.1);
+}
+
+.student-card p{
+    margin:8px 0;
+}
+
+.delete-btn{
+    background:red;
+    color:white;
+
+    border:none;
+
+    padding:10px 20px;
+
+    border-radius:6px;
+
+    cursor:pointer;
+}
+
+.delete-btn:hover{
+    background:darkred;
+}
+
+.confirm-box{
+
+    margin-top:20px;
+
+    background:#fff4f4;
+
+    padding:20px;
+
+    border-radius:10px;
+
+    border:1px solid red;
+
+}
+
+.yes-btn{
+
+    background:red;
+
+    color:white;
+
+    padding:10px 20px;
+
+    border:none;
+
+    margin-right:10px;
+
+    border-radius:6px;
+
+}
+
+.cancel-btn{
+
+    background:gray;
+
+    color:white;
+
+    padding:10px 20px;
+
+    border:none;
+
+    border-radius:6px;
+
+}
+
+button:hover{
+opacity:.9;
+}

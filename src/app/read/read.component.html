@@ -1,0 +1,31 @@
+    <div class="container">
+        <h2>Student List</h2>
+        <button routerLink="/create" class="btn btn-primary mb-3">Add Student</button>
+        <table class="table table-bordered">
+            <thead>
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Age</th>
+                <th>Course</th>
+                <th>Actions</th>
+            </tr>
+            </thead>
+            <tbody>
+            
+            @for (student of studentData; track student.studentId) {
+                <tr>
+                    <td>{{student.studentId}}</td>
+                    <td>{{student.studentName}}</td>
+                    <td>{{student.studentAge}}</td>
+                    <td>{{student.studentCourse}}</td>
+                    <td>
+                        <button [routerLink]="['/update',student.studentId]" class="btn btn-primary mb-3">Update Student</button> &nbsp; &nbsp;
+                        <button [routerLink]="['/delete',student.studentId]" class="btn btn-danger mb-3">Delete Student</button>
+                    </td>
+                </tr>
+            }
+            </tbody>
+        </table>
+
+    </div>

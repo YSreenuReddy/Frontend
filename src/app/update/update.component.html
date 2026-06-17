@@ -1,0 +1,19 @@
+<div class="container">
+    <h2>Update Student</h2>
+    <form #studentForm="ngForm" (ngSubmit)="updateStudentData()">
+        <div class="form-group">
+            <label for="name">Name:</label>
+            <input type="text" class="form-control" id="name" name="name" [(ngModel)]="studentData.studentName" required>
+        </div>
+        <div class="form-group">
+            <label for="age">Age:</label>
+            <input type="number" class="form-control" id="age" name="age" [(ngModel)]="studentData.studentAge" required>
+        </div>
+        <div class="form-group">
+            <label for="course">Course:</label>
+            <input type="text" class="form-control" id="course" name="course" [(ngModel)]="studentData.studentCourse" required>
+        </div>
+        <button type="button" class="btn btn-secondary mb-3" routerLink="/read">Back</button> &nbsp; &nbsp;
+        <button type="submit" class="btn btn-primary" [disabled]="studentForm.invalid">Update</button>
+    </form>
+</div>

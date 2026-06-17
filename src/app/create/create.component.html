@@ -1,0 +1,19 @@
+<div class="container">
+    <h2>Create New Record</h2>
+    <form #studentForm = "ngForm" (ngSubmit)="postStudentData()">
+
+        <div class="form-group">
+            <label for="name">Student Name:</label>
+            <input type="text" class="form-control" id="name" name="name" [(ngModel)]="studentData.StudentName" required>
+        </div>
+        <div class="form-group">
+            <label for="age">Student Age:</label>
+            <input type="number" class="form-control" id="age" name="age" [(ngModel)]="studentData.StudentAge" required>
+        </div>
+        <div class="form-group">
+            <label for="course">Student Course:</label>
+            <input type="text" class="form-control" id="course" name="course" [(ngModel)]="studentData.StudentCourse" required>
+        </div>
+        <button type="submit" class="btn btn-primary" [disabled]="!studentForm.form.valid">Submit</button>
+    </form>
+</div>

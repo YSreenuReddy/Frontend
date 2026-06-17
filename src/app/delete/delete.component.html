@@ -1,0 +1,63 @@
+<div class="container">
+
+<h2>Delete Student</h2>
+
+<div class="student-card">
+
+<p>
+<strong>ID:</strong>
+{{studentData.studentId}}
+</p>
+
+<p>
+<strong>Name:</strong>
+{{studentData.studentName}}
+</p>
+
+<p>
+<strong>Age:</strong>
+{{studentData.studentAge}}
+</p>
+
+<p>
+<strong>Course:</strong>
+{{studentData.studentCourse}}
+</p>
+
+</div>
+
+<div class="confirm-box">
+
+<p>
+
+Are you sure you want to delete
+
+<b>
+{{studentData.studentName}}
+</b>
+
+?
+
+</p>
+
+<button
+class="yes-btn"
+(click)="deleteStudentData()">
+
+Yes Delete
+
+</button>
+
+&nbsp;&nbsp;
+
+<button
+class="cancel-btn"
+(click)="cancel()">
+
+Cancel
+
+</button>
+
+</div>
+
+</div>
